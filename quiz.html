@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interactive Quiz App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Quiz Mania</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="quizcontainer">
+
+        <div class="on-top">
+            <h4 class="center">Instructions</h4>
+        </div>
+        
+            <div class="sometext">
+                <p>You need to solve 10 MCQ's and 5 true/false type questions.</p>
+
+                <br>
+                <p> Each mcq carries 2 marks and each true/false carries 1 marks.</p>
+                <br>
+
+                <p>You have 30 seconds for each question.</p>
+            </div>
+        
+        <div class="center">
+           <button class="btn" id="startquiz" > Start Quiz </button>
+        </div>
+    </div>
+    <div id="timeandscore">
+        <div>
+            <p id="time"></p>
+        </div>
+        
+     </div>
+     <div id="score">
+        
+   </div>
+    
+    <div class="quizbox hidden" id="quizbox">
+     <h5 id="question"></h5>
+     <div class="options">
+        <ol class="options">
+            <li class="option">
+                <label>
+                    <input type="radio" name="q" value="a" > a
+                </label>
+            </li>
+            <li class="option">
+                <label>
+                    <input type="radio" name="q" value="b" > b 
+                </label>
+            </li>
+            <li class="option" id="radiotag3">
+                <label id="radiotag3">
+                    <input type="radio" name="q" value="c" > c
+                </label>
+            </li>
+            <li class="option" id="radiotag4">
+                <label>
+                    <input type="radio" name="q" value="d" id="radiotag5"> d
+                </label>
+            </li>
+            
+        </ol>
+        <div class="two-buttons">
+
+            <div class="submitbutton">
+                <button class="btn" id="submit"> Submit </button>
+            </div>
+            <div class="nextbutton">
+                <button class="btn" id="next"> Next </button>
+            </div>
+        </div>
+        <div id="checkanswer">
+          
+        </div>
+     </div>
+    </div>
+
+    <div id="finalpage">
+        <div class="final">
+            <p id="finalscoretext">Your total Score is: </p>
+        </div>
+        <div class="restart">
+            <button class="btn" id="restart"> Restart the Quiz </button>
+        </div>
+        <div class="othercategory">
+            <p>Select Any other category: </p>
+            <div>
+                <ul>
+                 <li id="1" ><a  href="quiz.html?quizType=1">OOP</a></li> 
+                </ul>
+             </div>
+             <div>
+                 <ul>
+                     <li id="2" ><a href="quiz.html?quizType=2">Data Structure</a></li>
+                 </ul>
+             </div>
+             <div>
+                 <ul>
+                     <li id="3"><a href="quiz.html?quizType=3">Algorithm</a></li>
+                 </ul>
+             </div>
+             <div>
+                 <ul>
+                     <li id="4"><a href="quiz.html?quizType=4">Relational DataBase</a></li>
+                 </ul>
+             </div>
+             <div>
+                 <ul>
+                     <li id="5"><a href="quiz.html?quizType=5">Computer Networks</a></li>
+                 </ul>
+             </div>
+        </div>
+    </div>
+    
+
+    <div class="footerin" id="fireit">
+        Copyright &copy; quizmania.com 
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
